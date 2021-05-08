@@ -1,0 +1,18 @@
+<!--this just the base template with the most common html styles that can be inherited by the rest of the templates-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="static/css/main.css" > -->  
+    <link rel="stylesheet" href="{{url_for('static', filename='css/main.css') }}" >
+    <!-- note how we use the url for -->
+    {% block head %} {% endblock %}
+</head>
+<body>
+    {% block body %} {% endblock %}
+</body>
+</html>
+
+
